@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.RadioButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -23,10 +24,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.activity = this@MainActivity
         binding.alert = this@MainActivity
-
+        binding.prev = this@MainActivity
 
         //setContentView(R.layout.activity_main)
     }
+
 
     fun toastBtnClick(view: View){
         Toast.makeText(this, "Toast", Toast.LENGTH_SHORT).show()
@@ -46,4 +48,10 @@ class MainActivity : AppCompatActivity() {
         alertDialog.setView(view)
         alertDialog.show()
     }
+
+    fun prevButtonClick(view: View){
+        // 단순히 finish 가 아니라 intent flag 등을 더 찾아보기
+        finish()
+    }
+
 }
