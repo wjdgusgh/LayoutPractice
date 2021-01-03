@@ -49,9 +49,8 @@ class MainActivity : AppCompatActivity() {
         alertDialog.show()
     }
 
-    fun prevButtonClick(view: View){
-        // 단순히 finish 가 아니라 intent flag 등을 더 찾아보기
-        finish()
+    fun onBackPressed(view: View) {
+        onBackPressed()
     }
 
 }

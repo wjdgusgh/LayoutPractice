@@ -19,34 +19,41 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginRight="30dp"
-        android:layout_marginLeft="30dp">
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
 
             <Button
                 android:id="@+id/toast"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 android:onClick="@{activity::toastBtnClick}"
-                android:text="Toast" />
+                android:text="Toast"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
 
             <Button
                 android:id="@+id/alertButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 android:onClick="@{activity::showSettingPopup}"
-                android:text="Alert" />
+                android:text="Alert"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
 
             <ImageView
                 android:id="@+id/app_icon"
@@ -130,8 +137,8 @@
         <Button
             android:id="@+id/previous"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="@{activity::prevButtonClick}"
+            android:layout_height="150dp"
+            android:onClick="@{activity::onBackPressed}"
             android:text="previous">
 
         </Button>
